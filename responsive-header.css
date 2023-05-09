@@ -1,0 +1,36 @@
+@media only screen and (max-width: 968px) {
+    .packetteaching {
+        display: none;
+    }
+    }
+
+@media only screen and (max-width: 800px) {
+    .navigation, .language, .log-sign{
+        display: none;
+    }
+    .burger, .openbar, .closebar{
+        display: block;
+    }
+    header > div{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Start -  burger menu */
+    
+    /* End -  burger menu */
+/* Start -  Search */
+    .search, .search-bar, .search-button{
+        display: none;
+        width: 100%;
+    }
+    .openbar,.closebar{
+        position: absolute;
+        margin-left: -2em;
+        cursor: pointer;
+    }
+/* End -  Search */
+    
+}
+    
+
+/* For mobile phones: */

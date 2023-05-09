@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
@@ -7,41 +10,95 @@ body{
 }
 /* Start - Header */
 header{
-    background-color: var(--bck-grnd);
+    box-shadow: 0em 0.1em 0.8em lightgrey;
 }
 header > div{
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    padding: 1em;
+    text-transform: capitalize;
 }
 header > div > div,nav,form{
-    background-color: red;
-    padding: 1em;
+    padding:0.7em;
+    /* background-color: red; */
+}
+.burger, .openbar, .closebar {
+    display: none;
 }
 
+
+/* Start - burger-menu */
+
+/* End - burger-menu */
+
+
+/* Start - Header > nav */
 nav #categories-div{
     position: absolute;
-    margin: 2.2em 0 0 -1em;
+    margin: 2.5em 0 0 -1em;
     background-color: var(--bck-grnd);
+    padding: 0.05em 0.1em;
+    gap: 0.09em;
+    box-shadow: 0em 0.1em 0.8em lightgrey;
 }
 nav #categories-div > div {
-    /* display: none; */
+    height: 500px;
     width: 250px;
-    background-color: lightcoral;
-    margin: 0.05em;
+    background-color: white;
 }
-/* nav #categories-div > :first-child{
-    display: flex;
-} */
-.categories-links2 {
+nav li {
+    list-style: none;
+    padding: 1em;  
+    cursor: pointer;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.categories-div2{
     display: none;
 }
 .active-links2 {
     display: block;
 }
-.categories-links22 {
-    display: none;
+/* End - Header > nav */
+
+
+
+/* Start - Header > search */
+header form input {
+    /* width: clamp(100px, 10em , 1000px); */
+    /* width: clamp(20vw, 54vw + 1em, 70vw); */
+    /* width: 54vw; */
+    padding-left: 5em;
+    border-radius: 2em;
+    height: 3.3em;
+    border: solid 1px black;
+    background-color: rgba(226, 226, 226, 0.3);
 }
+header form input:focus{
+    outline: none;
+}
+header form button {
+    position: absolute;
+    margin:1em ;
+    border: none;
+    background-color: transparent;
+    opacity: 0.6;
+    cursor: pointer;
+}
+header form button:hover{
+    opacity: 1;
+}
+/* End - Header > search */
+
+
+/* Start - Header > cart */
+.cart{
+    display: flex;
+}
+/* End - Header > cart */
+
 /* End - Header */
 
 
