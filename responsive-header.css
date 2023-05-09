@@ -1,11 +1,15 @@
-@media only screen and (max-width: 968px) {
-    .packetteaching {
+@media only screen and (max-width: 1100px) {
+    .teaching {
         display: none;
     }
+}
+@media only screen and (max-width: 1000px) {
+    .packet {
+        display: none;
     }
-
+}
 @media only screen and (max-width: 800px) {
-    .navigation, .language, .log-sign{
+    .navigation, .language, .log-sign, .header-right-side{
         display: none;
     }
     .burger, .openbar, .closebar{
