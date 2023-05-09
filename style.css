@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bck-grnd:grey;
+}
+/* Start - Header */
+header{
+    background-color: var(--bck-grnd);
+}
+header > div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+header > div > div,nav,form{
+    background-color: red;
+    padding: 1em;
+}
+
+nav #categories-div{
+    position: absolute;
+    margin: 2.2em 0 0 -1em;
+    background-color: var(--bck-grnd);
+}
+nav #categories-div > div {
+    /* display: none; */
+    width: 250px;
+    background-color: lightcoral;
+    margin: 0.05em;
+}
+/* nav #categories-div > :first-child{
+    display: flex;
+} */
+.categories-links2 {
+    display: none;
+}
+.active-links2 {
+    display: block;
+}
+.categories-links22 {
+    display: none;
+}
+/* End - Header */
+
+
+
+/* Start - Main */
+
+/* End - Main */
+
+
+
+/* Start - Footer */
+
+/* End - Footer */
