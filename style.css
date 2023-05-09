@@ -9,8 +9,8 @@ body{
     --bck-grnd:grey;
 }
 /* Start - Header */
-header{
-    box-shadow: 0em 0.1em 0.8em lightgrey;
+header > div{
+    box-shadow: 0em 0.1em 0.8em lightgrey !important;
 }
 header > div{
     display: flex;
@@ -22,12 +22,17 @@ header > div > div,nav,form{
     padding:0.7em;
     /* background-color: red; */
 }
+
 .burger, .openbar, .closebar {
     display: none;
 }
 .logo{
     padding-left: 2em;
-    cursor: pointer;
+    cursor: initial;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
 }
 
 /* Start - burger-menu */
@@ -62,8 +67,7 @@ header > div > div,nav,form{
     transition: transform 0.17s;
     top: -1em;
     left: 0;
-    /* right:; */
-    bottom: 0;
+    bottom:-1em;
     z-index: 99;
     background: grey;
     color: white;
@@ -189,8 +193,6 @@ header form button:hover{
         z-index: 1;
 
     }
-    .cart-icon2{
-    }
     .cart-icon1:hover{
         opacity: 0;
     }
@@ -199,11 +201,79 @@ header form button:hover{
 
 
 /* Start - Main */
-
+    main section{
+        height: 1500px;
+        background-color:lightsalmon;
+        /* background-color: transparent; */
+    }
 /* End - Main */
 
 
 
 /* Start - Footer */
+footer{
+    position:relative;
+    bottom: 0;
+}
+    footer * {
+        color: white;
+        text-decoration: none;
+        word-spacing: 0.2em;
+        line-height: 1.8em;
+    }
+    footer .footer-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        background-color: rgba(0, 0, 0, 0.89);
+        padding: 2em;
+    }
+    footer .upper-footer, footer .lower-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .footer-links-div{
+        display: flex;
+        gap:8em;
+    }
+    footer .footer-links-divs{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-links-div a {
+        text-transform: capitalize;
+        font-size: 0.8em;
+    }
+    .footer-links-div a:hover{
+        text-decoration: underline;
+    }
+    .footer-links-div-responsive{
+        display: none;
+    }
+    .footer-links-divs-responsive{
+        display: none;
+    }
+    .footer-lang-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 1em;
+        gap: 0.5em;
+        border: 1px solid white;
+        padding: 1em;
+        opacity: 0.8;
+        text-align: center;
+        cursor: pointer;
+    }
 
+    .footer-copy-rights{
+        font-size: 0.7em;
+    }
+    .academy{
+        font-size: 1.5em;
+    }
+    footer .lower-footer b, .logo a b{
+        font-size: 1.2em;
+        color:blueviolet;
+    }
 /* End - Footer */

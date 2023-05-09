@@ -1,0 +1,28 @@
+@media only screen and (max-width: 850px) {
+    footer .footer-links-div{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1em;
+    }
+    .footer-copy-rights{
+        padding: 1.5em 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    footer .upper-footer, footer .lower-footer{
+        flex-direction: column;
+    }
+    .footer-lang-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 1em;
+        gap: 0.5em;
+        border: 1px solid white;
+        padding: 1em;
+        opacity: 0.8;
+        text-align: center;
+        cursor: pointer;
+    }
+}

@@ -7,17 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-header.css">
-
+    <link rel="stylesheet" href="responsive-footer.css">
 </head>
 <body>
 
     <header>
         <div>
             <ul class="menu">
-                <li><a class="menuItem" href="#">abcd</a></li>
-                <li><a class="menuItem" href="#">efgh</a></li>
-                <li><a class="menuItem" href="#">ijkl</a></li>
-                <li><a class="menuItem" href="#">mnopq</a></li>
+                <li><a class="menuItem" href="#">development</a></li>
+                <li><a class="menuItem" href="#">business</a></li>
+                <li><a class="menuItem" href="#">It & Software</a></li>
+                <li><a class="menuItem" href="#">Finances</a></li>
             </ul>
               
             <div class="burger">
@@ -26,7 +26,9 @@
                     <img class="closeIcon material-icons" src="folder-img/close.png" alt="close menu">
                 </button>
             </div>
-            <div class="logo">academy</div>
+            <div class="logo">
+                <a class="academy" href="#"><b>A</b>cademy</a>
+            </div>
             <nav class="navigation">
                 <span id="categories" onmouseover="mouseOver()" onmouseout="mouseOut()">categories</span>
                 <div id="categories-div" style="display: none;" onmouseover="mouseOver()" onmouseout="mouseOut()">
@@ -83,7 +85,7 @@
             </nav>
             <form class="search">
                 <button id="search-button" class="search-button" type="submit"><img src="folder-img/search.png" alt="search"></button>
-                <input class="search-bar" type="text" placeholder="Search for anything">
+                <input class="search-bar" type="text" placeholder="Search for anything" size="25">
             </form>
             <div class="packetteaching packet"><a href="#">business packet</a></div>
             <div class="packetteaching teaching"><a href="#">start teaching</a></div>
@@ -100,11 +102,54 @@
             </div>
     </div>
     </header>
-    <!-- <p >hello</p> -->
-<!-- <h1 id="demo">Mouse over me</h1> -->
+      
 
+    <main>
+        <section></section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="upper-footer">
+                <div class="footer-links-div">
+                    <div class="footer-links-divs">
+                        <a href="#">Academy business</a>
+                        <a href="#">teach on academy</a>
+                        <a href="#">get the app</a>
+                        <a href="#">about us</a>
+                        <a href="#">contact us</a>
+                    </div>
+                    <div class="footer-links-divs">
+                        <a href="#">careers</a>
+                        <a href="#">blog</a>
+                        <a href="#">help and support</a>
+                        <a href="#">affiliate</a>
+                        <a href="#">investors</a>
+                    </div>
+                    <div class="footer-links-divs">
+                        <a href="#">terms</a>
+                        <a href="#">privacy policy</a>
+                        <a href="#">cookie settings</a>
+                        <a href="#">sitemap</a>
+                        <a href="#">accessibility statement</a>
+                    </div>
+                </div>
+                <div class="footer-lang-div">
+                        <img src="folder-img/color-globe.png" alt="language">
+                         <p> Language</p>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <div>
+                    <a class="academy" href="#"><b>A</b>cademy</a>
+                </div>
+                <div class="footer-copy-rights">
+                    &#169; 2023 Academy, Inc.
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
-    <script src="responsive-header.js"></script>
-
 </body>
 </html>
