@@ -1,3 +1,32 @@
+// start - burger menu
+const menuBurger = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menuBurger.classList.contains("showMenu")) {
+    menuBurger.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menuBurger.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+    function(menuItem) { 
+      menuItem.addEventListener("click", toggleMenu);
+    }
+  )
+// end - burger menu
+
+
 // start - nav
 let menuCategories = document.querySelector("#categories"); // variable of span with text "categories"
 let menuDiv = document.querySelector("#categories-div"); // variable of container of categories
@@ -20,5 +49,4 @@ function mouseOver1(linkName){
 }   // this function adds and removes child content of categories
 // end - nav
 
-
-
+// start - search bar

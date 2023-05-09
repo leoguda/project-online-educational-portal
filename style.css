@@ -28,7 +28,48 @@ header > div > div,nav,form{
 
 
 /* Start - burger-menu */
-
+.menuItem {
+    display: block;
+    margin: 2em 4em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 0.5em;
+    padding: 0.3em;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  
+.menu {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.17s;
+    top: -1em;
+    left: 0;
+    /* right:; */
+    bottom: 0;
+    z-index: 99;
+    background: grey;
+    color: white;
+    list-style: none;
+    padding-top: 4em;
+  }
+  .showMenu {
+    transform: translateX(0);
+  }
 /* End - burger-menu */
 
 
