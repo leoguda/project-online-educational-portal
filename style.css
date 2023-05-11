@@ -207,7 +207,7 @@ nav a:hover,
 
 
 /* ////////////////////Start - Main */
-.main-section-container{
+.main-section1-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -312,10 +312,121 @@ nav a:hover,
 .main-section1-contents1-child-div2-a:hover  img{
     opacity: 0.5;
 }
+
+
+
+/* Start - section 2 */
 .section2{
+    text-align: center;
     height: 500px;
     background-color: whitesmoke;
 }
+.section2 > h2{
+    padding: 2em 0 1em 0;
+}
+.carousel{
+    position: relative;
+    max-width: 1270px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.carousel-image div{
+    padding: 1em;
+    max-width: 25em;
+    background-color: white;
+    margin: 10px;
+}
+.cr1-0{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cr1-0 hr {
+    width: 80%;
+}
+.carousel-image-span1{
+    font-weight: bold;
+    padding: 0.5em 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 15%;
+    transition: background-color 140ms;
+}
+
+.cr1-0 a{
+    text-decoration: none;
+}
+
+.carousel-image-a{
+    margin: auto;
+    color: black;
+    letter-spacing: 0.2em;
+    padding: 1em;
+    max-width:10em;
+    background-color: rgb(215, 183, 247);
+    transition: background-color 140ms;
+}
+.carousel-image-span1:hover, .carousel-image-a:hover{
+    background-color:blueviolet;
+    color:  whitesmoke;
+}
+
+.carousel-track-container{
+    height: 100%;
+    position: relative;
+}
+.carousel-track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 500ms ease-in-out;
+}
+.carousel-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel-button{
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 250ms;
+    padding: 0.6em;
+}
+.carousel-button:hover{
+    transform: scale(1.2);
+    transform: translateY(10%);
+
+}
+
+.button-left{
+    left: 0;
+    z-index: 10;
+}
+.button-right{
+    right: 9px;
+    z-index: 10;
+}
+/* End - section 2 */
+
+
+
+
 .section3{
     height: 1300px;
 }
