@@ -24,7 +24,6 @@ header > div{
 }
 header > div > div,nav,form{
     padding:0.7em;
-    /* background-color: red; */
 }
 
 .burger, .openbar, .closebar {
@@ -207,13 +206,15 @@ nav a:hover,
 
 
 /* ////////////////////Start - Main */
-.main-section1-container{
+.main-container-section1{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* Start - Main > section 1 */
+    /* Start - Main > section 1 > div1*/
+
 .section1{
     padding: 0 0 3em 0;
 }
@@ -237,6 +238,9 @@ nav a:hover,
     font-size: 1.2em;
     line-height: 1.4em;
 } 
+    /* End - Main > section 1 > div1 */
+
+    /* Start - Main > section 1 > div2 */
 
 .main-section1-div2-div1{
     padding: 2em 0 0 2em;
@@ -248,13 +252,13 @@ nav a:hover,
     display: inline-block;
     padding: 0 0.7em;
     color: darkslategrey;
+    text-transform: capitalize;
     font-weight: 600;
     cursor: pointer;
 }
 .main-section1-links:hover{
     color: black;
 }
-/* End - Main > section 1 */
 .main-section1-contents{
     display: none;
     justify-content: center;
@@ -262,11 +266,9 @@ nav a:hover,
 .main-section1-contents-div .active-contents{
     display: flex;
 }
-
 .main-section1-contents1-child{
     padding: 1em 2em;
     max-width: 1275px;
-    /* background-color: lightskyblue; */
     border: 1px solid lightgray;
 }
 .main-section1-contents1-child-div-p{
@@ -312,6 +314,9 @@ nav a:hover,
 .main-section1-contents1-child-div2-a:hover  img{
     opacity: 0.5;
 }
+    /* End - Main > section 1 > div2 */
+
+/* End - Main > section 1 */
 
 
 
@@ -425,22 +430,62 @@ nav a:hover,
 /* End - section 2 */
 
 
-
+/* Start - section 3 */
 
 .section3{
-    height: 1300px;
+    display: flex;
+    justify-content: space-around;
+    padding: 3em 0;
 }
-.section4{
+.main-section3-div-child1-h2{
+    padding-left: 2em;
+    text-transform: capitalize;
+}
+.main-section3-div-child2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    max-width: 1340px;
+}
+.main-section3-div-child2-div-p{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.main-section3-div-child2-div-child {
+max-height: 400px;
+overflow: hidden;
+}
+.main-section3-div-child2-div-child img{
+    width: 15.8vw;
+    min-width: 200px;
+}
+.main-section3-div-child2-div-a{
+    text-decoration: none;
+    color: black;
+}
+.main-section3-div-child2-div-child img:hover{
+    transform: scale(1.1);
+}
+.main-section3-div-child2-responsive{
+    display: none;
+}
+/* End - section 3 */
+
+
+/* .section4{
     height: 480px;
     background-color: whitesmoke;
-}
+} */
 .section5{
     height: 320px;
+    background-color: whitesmoke;
+
 }
-.section6{
+/* .section6{
     height: 480px;
     background-color: whitesmoke;
-}
+} */
 .section7{
     height: 1060px;
 }
