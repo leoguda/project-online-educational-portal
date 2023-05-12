@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy - Quiz</title>
+    <link rel="icon" href="folder-img/A-icon.png">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div>
+        <div id="quiz-first" class="main-div main-div0">
+            <h1>Take a quiz and get to know which profession could suit you the most</h1>
+            <button class="button-start" onclick="first()">start</button>
+        </div>
+
+        <form id="quiz-second" class="main-div1 main-div0">
+            <h1>Of the following options on which one do you spend most of your free time on? <i>(required)</i></h1>
+            <div>
+                <span>
+                    <input type="radio" id="hobby1" name="hobby" value="drawing"> 
+                    <label for="hobby1">drawing</label> 
+                </span>
+                <span>
+                    <input type="radio" id="hobby2" name="hobby" value="math"> 
+                    <label for="hobby2"> mathematical quizzes</label>
+                </span>
+                <span>
+                    <input type="radio" id="hobby3" name="hobby" value="reading">  
+                    <label for="hobby3"> reading</label>
+                </span>
+                <span>
+                    <input type="radio" id="hobby4" name="hobby" value="sports"> 
+                    <label for="hobby4"> sports activities</label>
+                </span>
+            </div>
+            <h1>What is your preferable work style?</h1>
+            <span>
+                <input type="checkbox" id="age1" name="age" value="under">  
+                <label for="age1">under 18</label></span>
+            <span>
+                <input type="checkbox" id="age2" name="age" value="above">
+                <label for="age2">above 18</label></span>
+            </span>
+                
+            <button type="button" class="button-start" onclick="quiz()">next</button>
+        </form>
+
+        <div class="main-div3 main-div0">
+            <h1 id="result"></h1>
+        </div>
+        <a id="again" href="quiz.html" class="back-to-main">give it a another try</a>
+        <a href="index.html" class="back-to-main">back to the main page</a>
+    </div>
+        <script src="quiz.js"></script>
+</body>
+</html>

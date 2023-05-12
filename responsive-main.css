@@ -48,6 +48,9 @@ display: none;
         text-align: center;
         width: 30em;
     }
+    .section1-quick-quiz{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 950px) {

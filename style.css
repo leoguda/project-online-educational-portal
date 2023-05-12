@@ -223,7 +223,7 @@ nav a:hover,
 }
 .main-section1-div1-div{
     position: absolute;
-    padding: 0em 2em 1em 1em;
+    padding: 0em 2em 2em 1em;
     margin: 3.5em;
     background-color: white;
     box-shadow: 0 0 0.6em lightgrey, 0 0 0.6em lightgrey;
@@ -238,6 +238,16 @@ nav a:hover,
     font-size: 1.2em;
     line-height: 1.4em;
 } 
+.quick-quiz{
+    margin: 0 0 0 1em;
+    padding: 1em;
+    color: black;
+}
+.quick-quiz:hover{
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
     /* End - Main > section 1 > div1 */
 
     /* Start - Main > section 1 > div2 */
