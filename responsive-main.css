@@ -24,24 +24,59 @@
 display: none;
 }
 }
-
-@media only screen and (max-width: 950px) {
-    .carousel{
-        height: 350px;
+@media only screen and (max-width: 1000px){
+    .section5-child1{  
+        flex-direction: column-reverse;
     }
-    .carousel-image *{
-        font-size: 0.9em;
+    .section5-child2{
+        flex-direction: column  
     }
-    .cr1-0{
-        display: flex;
-        flex-direction: column;
+    .section5-child1-div1, .section5-child2-div{
         justify-content: center;
         align-items: center;
     }
- 
-    .carousel-image-a{
-        display: none;
+    .section5 h2,.section5-child2-div{
+    text-align: center;
     }
+    .section5-child1-div-child3,.section5-child2-div-child3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .section5-child1-div-child3 a,.section5-child2-div-child3 a{
+        text-align: center;
+        width: 30em;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+.carousel{
+    height: 350px;
+}
+.carousel-image *{
+    font-size: 0.9em;
+}
+.cr1-0{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image-a{
+    display: none;
+}
+.section4-child3{
+    width: 85vw;
+    height: 7em;
+    flex-direction: column;
+    align-items: center;
+}
+.section5-child1-div1, .section5-child2-div{
+    padding:0;
+    gap: 1em;
+}
 }
 
 @media only screen and (max-width: 900px) {
@@ -111,7 +146,12 @@ display: none;
     background-color: whitesmoke;
     text-transform: uppercase;
 }
+.section4-h2,.section4-p{
+    font-size: 0.9em;
+    text-align: center;
 }
+}
+
 @media only screen and (max-width: 600px) {
     .carousel{
         height: 300px;
@@ -125,8 +165,14 @@ display: none;
 }
 
 @media only screen and (max-width: 480px){
-.main-section1-contents1-child-div2-a3, .main-section1-contents1-child-div2-a4{
+    .main-section1-contents1-child-div2-a3, .main-section1-contents1-child-div2-a4{
     display: none;
+}
+.main-section1-links-div{
+    width: 70vw;
+}
+.main-section1-links {
+    font-size: 0.8em;
 }
 .carousel-image{
     justify-content: center;
@@ -134,5 +180,13 @@ display: none;
 }
 .cr1-2, .cr2-2, .cr3-1 {
     display: none;
+}
+.section4-child3-div img{
+    width: 30vw;
+    height: 5vh;
+}
+.section5-child1-div-child3 a,.section5-child2-div-child3 a{
+    text-align: center;
+    width: 15em;
 }
 }

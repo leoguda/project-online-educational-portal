@@ -9,7 +9,10 @@
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
+    footer .footer-container{
+        padding: 2em 1em;
+    }
     footer .upper-footer, footer .lower-footer{
         flex-direction: column;
     }
