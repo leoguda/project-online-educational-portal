@@ -57,7 +57,7 @@ flex-direction: column;
 }
 #result{
     display: none;
-    padding: 3em 0;
+    padding: 3em 1.5em;
     box-shadow: 0 0 10px darkslategray;
 }
 .back-to-main{
@@ -70,4 +70,18 @@ flex-direction: column;
 .back-to-main:hover{
     background-color: lightskyblue;
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 650px){
+    .main-div0{
+        max-width: 25em;
+        font-size: 0.8em;
+}
+}
+@media only screen and (max-width: 350px){
+    .main-div0{
+        max-width: 20em;
+        font-size: 0.7em;
+}
 }
